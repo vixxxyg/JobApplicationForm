@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Job Application Form</h1>
+    <form id="jobApplicationForm">
+    <fieldset class="step" id="step-1">
+        <legend id="step1Label">Step 1: Personal Information</legend>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required />
+    </fieldset>
+    <fieldset class="step" id="step-2" hidden>
+      <legend id="step2Label">Step 2: Work Experience</legend>
+      <label for="company">Most Recent Company</label>
+      <input type="text" id="company" name="company" required />
+      <label for="jobTitle">Job Title</label>
+      <input type="text" id="jobTitle" name="jobTitle" required />
+      <label for="yearsExperience">Years of Experience</label>
+      <input
+        type="number"
+        id="yearsExperience"
+        name="yearsExperience"
+        min="0"
+        required
+      />
+    </fieldset>
+    <fieldset class="step" id="step-3" hidden>
+      <legend id="step3Label">Step 3: Skills & Qualifications</legend>
+      <label for="skills">Skill(s)</label>
+      <textarea id="skills" name="skills" rows="4" required></textarea>
+      <label for="highestDegree">Degree Obtained (Highest)</label>
+      <select id="highestDegree" name="highestDegree" required>
+        <option value="">Select Degree</option>
+        <option value="highschool">High School Diploma</option>
+        <option value="bachelor">Bachelor's Degree</option>
+        <option value="master">Master's Degree</option>
+        <option value="phd">Ph.D.</option>
+      </select>
+    </fieldset>
+    <fieldset class="step" id="step-4" hidden>
+      <legend id="step4Label">Step 4: Review & Submit</legend>
+      <p>Review your information before submitting the application.</p>
+      <button type="submit">Submit Application</button>
+    </fieldset>
+    <fieldset class="step" id="step-4" hidden>
+      <legend id="step4Label">Step 4: Review & Submit</legend>
+      <p>Review your information before submitting the application.</p>
+      <button type="submit">Submit Application</button>
+    </fieldset>
+    </form>
+  </body>
+</html>
