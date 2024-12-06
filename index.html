@@ -4,20 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+    <link rel="stylesheet" href="./styles.css">
     <title>Document</title>
   </head>
   <body>
     <h1>Job Application Form</h1>
     <form id="jobApplicationForm">
     <fieldset class="step" id="step-1">
-        <legend id="step1Label">Step 1: Personal Information</legend>
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" required />
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required />
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" required />
-        <button type="button" class="next" onclick="nextStep()">Next</button>
+      <legend id="step1Label">Step 1: Personal Information</legend>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required />
+      <button type="button" class="next" onclick="nextStep()">Next</button>
     </fieldset>
     <fieldset class="step" id="step-2" hidden>
       <legend id="step2Label">Step 2: Work Experience</legend>
@@ -56,6 +57,8 @@
       <button type="button" class="previous" onclick="previousStep()">Previous</button>
       <button type="submit">Submit Application</button>
     </fieldset>
+    <div id="errorMessages" style="color: rgb(253, 67, 67)"></div>
     </form>
+    <script src="./index.js"></script>
   </body>
 </html>
